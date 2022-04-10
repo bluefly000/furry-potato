@@ -1,6 +1,6 @@
 {
     "version": "0.2.0",
-    "description": "Japanese programming font which is a composed of Fira Mono and GenShin-Gothic",
+    "description": "Japanese programming font which is a composed of Fira Mono, GenShin-Gothic and Nerd Fonts",
     "homepage": "https://github.com/yuru7/Firge/",
     "license": {
         "identifier": "Freeware",
