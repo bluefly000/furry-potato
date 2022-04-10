@@ -1,0 +1,37 @@
+{
+    "version": "1.2.4",
+    "description": "Japanese programming font which is a composed of IBM Plex Mono, IBM Plex Sans JP and Nerd Fonts",
+    "homepage": "https://github.com/yuru7/PlemolJP",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://github.com/yuru7/PlemolJP/blob/master/LICENSE.txt"
+    },
+    "url": "https://github.com/yuru7/PlemolJP/releases/download/v1.2.4/PlemolJP_NF_v1.2.4.zip",
+    "hash": "55cb3609dc7fc0afa15d8701451dcb0c2e687d64a955e687d874647248d4029f",
+    "extract_dir": "PlemolJP_NF_v1.2.4",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/yuru7/PlemolJP/releases/download/v$version/PlemolJP_NF_v$version.zip",
+        "extract_dir": "PlemolJP_NF_v$version"
+    },
+    "installer": {
+        "script": [
+            "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
+            "    $fontdir = \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\"",
+            "    If (-Not(Test-Path -Path $fontdir)) { New-Item -ItemType \"directory\" -Path $fontdir }",
+            "    New-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value \"$fontdir\\$($_.Name)\" -Force | Out-Null",
+            "    Copy-Item $_.FullName -destination \"$fontdir\"",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
+            "    $fontdir = \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\"",
+            "    If (-Not(Test-Path -Path \"$fontdir\\Deleted\")) { New-Item -ItemType \"directory\" -Path \"$fontdir\\Deleted\" }",
+            "    Remove-ItemProperty -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "    Move-Item \"$fontdir\\$($_.Name)\" -Destination \"$fontdir\\Deleted\\$($_.Name)\" -Force",
+            "}"
+        ]
+    }
+}
