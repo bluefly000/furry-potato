@@ -1,0 +1,37 @@
+{
+    "version": "0.2.1",
+    "description": "Japanese programming font which is a composed of Inter and GenJyuu-Gothic",
+    "homepage": "https://github.com/yuru7/InGenUI",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://github.com/yuru7/InGenUI/blob/master/LICENSE.txt"
+    },
+    "url": "https://github.com/yuru7/InGenUI/releases/download/v0.2.1/InGenUI_v0.2.1.zip",
+    "hash": "b82534f02aabce93aef2d5fd53c29028c20821b172f23647c889dbe790c3864b",
+    "extract_dir": "InGenUI_v0.2.1",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/yuru7/InGenUI/releases/download/v$version/InGenUI_v$version.zip",
+        "extract_dir": "InGenUI_v$version"
+    },
+    "installer": {
+        "script": [
+            "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
+            "    $fontdir = \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\"",
+            "    If (-Not(Test-Path -Path $fontdir)) { New-Item -ItemType \"directory\" -Path $fontdir }",
+            "    New-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value \"$fontdir\\$($_.Name)\" -Force | Out-Null",
+            "    Copy-Item $_.FullName -destination \"$fontdir\"",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
+            "    $fontdir = \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\"",
+            "    If (-Not(Test-Path -Path \"$fontdir\\Deleted\")) { New-Item -ItemType \"directory\" -Path \"$fontdir\\Deleted\" }",
+            "    Remove-ItemProperty -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "    Move-Item \"$fontdir\\$($_.Name)\" -Destination \"$fontdir\\Deleted\\$($_.Name)\" -Force",
+            "}"
+        ]
+    }
+}
