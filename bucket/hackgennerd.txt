@@ -1,18 +1,18 @@
 {
-    "version": "0.1.0",
-    "description": "Japanese programming font which is a composed of BIZ UD Gothic and JetBrains Mono",
-    "homepage": "https://github.com/yuru7/udev-gothic",
+    "version": "2.5.3",
+    "description": "Japanese programming font which is a composed of Hack, GenJyuu-Gothic and Nerd Fonts",
+    "homepage": "https://github.com/yuru7/HackGen",
     "license": {
         "identifier": "Freeware",
-        "url": "https://github.com/yuru7/udev-gothic/blob/main/LICENSE.txt"
+        "url": "https://github.com/yuru7/HackGen/blob/master/LICENSE.txt"
     },
-    "url": "https://github.com/yuru7/udev-gothic/releases/download/v0.1.0/UDEVGothic_v0.1.0.zip",
-    "hash": "ad9a0e276474be84bed1ec5b36d6b78efa1255b7a90cdc1bc24605d624a5bea5",
-    "extract_dir": "UDEVGothic_v0.1.0",
+    "url": "https://github.com/yuru7/HackGen/releases/download/v2.5.3/HackGenNerd_v2.5.3.zip",
+    "hash": "c9393f54bc7704c315b8293244738d014e8b6149090537348b8550d1ef1be254",
+    "extract_dir": "HackGenNerd_v2.5.3",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/yuru7/udev-gothic/releases/download/v$version/UDEVGothic_v$version.zip",
-        "extract_dir": "UDEVGothic_v$version"
+        "url": "https://github.com/yuru7/HackGen/releases/download/v$version/HackGenNerd_v$version.zip",
+        "extract_dir": "HackGenNerd_v$version"
     },
     "installer": {
         "script": [
