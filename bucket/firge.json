@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "description": "Japanese programming font which is a composed of Fira Mono and GenShin-Gothic",
+    "homepage": "https://github.com/yuru7/Firge/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://github.com/yuru7/Firge/blob/master/LICENSE.txt"
+    },
+    "url": "https://github.com/yuru7/Firge/releases/download/v0.2.0/Firge_v0.2.0.zip",
+    "hash": "18ccd0d5c7689a02af4a7217912c0112db9f24071e8b36a716baef3b446c32e7",
+    "extract_dir": "Firge_v0.2.0",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/yuru7/Firge/releases/download/v$version/Firge_v$version.zip",
+        "extract_dir": "Firge_v$version"
+    },
+    "installer": {
+        "script": [
+            "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
+            "    $fontdir = \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\"",
+            "    If (-Not(Test-Path -Path $fontdir)) { New-Item -ItemType \"directory\" -Path $fontdir }",
+            "    New-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value \"$fontdir\\$($_.Name)\" -Force | Out-Null",
+            "    Copy-Item $_.FullName -destination \"$fontdir\"",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
+            "    $fontdir = \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\"",
+            "    If (-Not(Test-Path -Path \"$fontdir\\Deleted\")) { New-Item -ItemType \"directory\" -Path \"$fontdir\\Deleted\" }",
+            "    Remove-ItemProperty -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "    Move-Item \"$fontdir\\$($_.Name)\" -Destination \"$fontdir\\Deleted\\$($_.Name)\" -Force",
+            "}"
+        ]
+    }
+}
