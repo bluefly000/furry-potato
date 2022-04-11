@@ -1,6 +1,6 @@
 {
     "version": "2.5.3",
-    "description": "Japanese programming font which is a composed of Hack and GenJyuu-Gothic",
+    "description": "Hackと源柔ゴシックを合成したプログラミングフォント 白源 (はくげん／HackGen)",
     "homepage": "https://github.com/yuru7/HackGen",
     "license": {
         "identifier": "Freeware",

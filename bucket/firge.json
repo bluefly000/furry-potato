@@ -1,6 +1,6 @@
 {
     "version": "0.2.0",
-    "description": "Japanese programming font which is a composed of Fira Mono and GenShin-Gothic",
+    "description": "Fira Mono と源真ゴシックを合成したプログラミングフォント Firge (ファージ)",
     "homepage": "https://github.com/yuru7/Firge/",
     "license": {
         "identifier": "Freeware",

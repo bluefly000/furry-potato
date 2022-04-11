@@ -1,6 +1,6 @@
 {
     "version": "1.2.4",
-    "description": "Japanese programming font which is a composed of IBM Plex Mono, IBM Plex Sans JP and Nerd Fonts",
+    "description": "IBM Plex Mono と IBM Plex Sans JP を合成したプログラミングフォント PlemolJP (プレモル ジェイピー) に Nerd Fonts を追加したバリエーション",
     "homepage": "https://github.com/yuru7/PlemolJP",
     "license": {
         "identifier": "Freeware",

@@ -1,6 +1,6 @@
 {
     "version": "0.2.1",
-    "description": "Japanese programming font which is a composed of Inter and GenJyuu-Gothic",
+    "description": "Inter と 源真ゴシック (プロポーショナル版) を合成した UI フォント InGen UI",
     "homepage": "https://github.com/yuru7/InGenUI",
     "license": {
         "identifier": "Freeware",

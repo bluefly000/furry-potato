@@ -1,5 +1,6 @@
 {
     "version": "3.0.0",
+	"description": "Windows 8/10/11で画面の各部分のフォントを設定するツール",
     "homepage": "http://tatsu.life.coocan.jp/MySoft/WinCust/index.html",
     "license": "MIT",
     "url": "https://github.com/Tatsu-syo/noMeiryoUI/releases/download/TAG-3.0.0/noMeiryoUI3.0.0.zip",

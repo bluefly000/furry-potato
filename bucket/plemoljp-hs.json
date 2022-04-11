@@ -1,6 +1,6 @@
 {
     "version": "1.2.4",
-    "description": "Japanese programming font which is a composed of IBM Plex Mono and IBM Plex Sans JP",
+    "description": "IBM Plex Mono と IBM Plex Sans JP を合成したプログラミングフォント PlemolJP (プレモル ジェイピー) (全角スペース不可視)",
     "homepage": "https://github.com/yuru7/PlemolJP",
     "license": {
         "identifier": "Freeware",
