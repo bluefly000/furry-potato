@@ -1,0 +1,21 @@
+{
+    "version": "3.01",
+    "description": "Windows 8/10/11で画面の各部分のフォントを設定するツール",
+    "homepage": "http://www.net3-tv.net/~m-tsuchy/tsuchy/index.htm",
+    "license": "Freeware",
+    "url": "http://www.net3-tv.net/~m-tsuchy/tsuchy/download/fs301.zip",
+    "hash": "0124f0f426df12409b969b8b3c396ab9f90bc2cc9b0533d9d816f383e8ebf23e",
+    "shortcuts": [
+        [
+            "FileSum.exe",
+            "FileSum"
+        ]
+    ],
+    "checkver": {
+        "url": "http://www.net3-tv.net/~m-tsuchy/tsuchy/index.htm",
+        "regex": "FileSum V([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "http://www.net3-tv.net/~m-tsuchy/tsuchy/download/fs$cleanVersion.zip"
+    }
+}
