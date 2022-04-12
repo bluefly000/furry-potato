@@ -14,7 +14,7 @@
         "$config.PortableConfig.IconCacheFile= '.\\Data'",
         "$config.Save(\"$dir\\portable.cfg\")",
     ],
-    "post_install": {
+    "post_install": [
         "$exepath = \"$dir\\MaxLauncher.exe\".Replace('\\', '\\\\')",
         "'add-startup', 'remove-startup' | ForEach-Object {",
         "    $content = Get-Content \"$bucketsdir\\furry-potato\\scripts\\maxlauncher\\$_.reg\"",
@@ -24,7 +24,7 @@
         "    }",
         "    $content | Set-Content -Path \"$dir\\$_.reg\"",
         "}"
-    },
+    ],
     "uninstaller": {
         "script": "Invoke-ExternalCommand reg -ArgumentList @('import', \"$dir\\remove-startup.reg\") | Out-Null"
     },
