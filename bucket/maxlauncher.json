@@ -24,7 +24,7 @@
         "    }",
         "    $content | Set-Content -Path \"$dir\\$_.reg\"",
         "}"
-    }
+    },
     "uninstaller": {
         "script": "Invoke-ExternalCommand reg -ArgumentList @('import', \"$dir\\remove-startup.reg\") | Out-Null"
     },
