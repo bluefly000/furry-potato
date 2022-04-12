@@ -3,24 +3,18 @@
     "description": "A simple tabbed application launcher.",
     "homepage": "https://maxlauncher.sourceforge.io/",
     "license": "MS-RL",
-    "notes": "Start MaxLauncher with Windows by running: '$dir\\add-startup.reg'",
     "url": "https://sourceforge.net/projects/maxlauncher/files/MaxLauncher/1.31.0.0/maxlauncher_1.31.0.0_portable.zip",
     "hash": "sha1:fcd05383f2a0792709003faa4935f38166ce4c4c",
-    "post_install": [
-        "$exepath = \"$dir\\MaxLauncher.exe\".Replace('\\', '\\\\')",
-        "'add-startup', 'remove-startup' | ForEach-Object {",
-        "    $content = Get-Content \"$bucketsdir\\furry-potato\\scripts\\maxlauncher\\$_.reg\"",
-        "    $content = $content.Replace('$exepath', $exepath)",
-        "    if ($global) {",
-        "       $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
-        "    }",
-        "    $content | Set-Content -Path \"$dir\\$_.reg\"",
-        "}"
-    ],
-    "uninstaller": {
-        "script": "Invoke-ExternalCommand reg -ArgumentList @('import', \"$dir\\remove-startup.reg\") | Out-Null"
-    },
     "bin": "MaxLauncher.exe",
+    "pre_install": [
+        "[xml]$config= Get-Content \"$dir\\portable.cfg\"",
+        "$config.PortableConfig.ApplicationConfigFile= '.\\Data'",
+        "$config.PortableConfig.ShortcutsDirectory= '.\\Data'",
+        "$config.PortableConfig.FavoritesConfigFile= '.\\Data'",
+        "$config.PortableConfig.IconCacheFile= '.\\Data'",
+        "$config.Save(\"$dir\\portable.cfg\")"
+    ],
+    "persist": "Data",
     "shortcuts": [
         [
             "MaxLauncher.exe",
