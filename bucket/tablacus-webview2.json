@@ -14,7 +14,7 @@
             "if ( $pro -ne $null ) {",
             "    Stop-process -name \"TE\" -Force",
             "}",
-            "while ( $pro -eq $null ) {",
+            "while ( $pro -ne $null ) {",
             "    $pro = Get-Process \"TE\"",
             "}",
             "Copy-Item \"$dir\\lib\\tewv*.dll\" \"$(appdir tablacus-explorer $global)\\current\\lib\" -Recurse -Force"
