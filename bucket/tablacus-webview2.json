@@ -1,6 +1,6 @@
 {
     "version": "22.3.15",
-    "description": "Tablacus ExplorerをBlink化する拡張機能",
+    "description": "Tablacus Explorer Blink extension",
     "homepage": "https://tablacus.github.io/tewv2_ja.html",
     "license": "MIT",
     "url": "https://github.com/tablacus/TablacusExplorerWebView2/releases/download/22.3.15/tewv2_220315.zip",
@@ -8,10 +8,22 @@
     "depends": "furry-potato/tablacus-explorer",
     "extract_dir": "tewv",
     "installer": {
-        "script": "Copy-Item \"$dir\\lib\\tewv*.dll\" \"$(appdir tablacus-explorer $global)\\current\\lib\" -Recurse"
+        "script": [
+            "$pro = Get-Process \"TE\"",
+            "if ( $pro -ne $null ) {",
+            "    Stop-process -name \"TE\"",
+            "}",
+            "Copy-Item \"$dir\\lib\\tewv*.dll\" \"$(appdir tablacus-explorer $global)\\current\\lib\" -Recurse"
+        ]
     },
     "uninstaller": {
-        "script": "Remove-Item \"$(appdir tablacus-explorer $global)\\current\\lib\\tewv*.dll\" -Recurse"
+        "script": [
+            "$pro = Get-Process \"TE\"",
+            "if ( $pro -ne $null ) {",
+            "    Stop-process -name \"TE\"",
+            "}",
+            "Remove-Item \"$(appdir tablacus-explorer $global)\\current\\lib\\tewv*.dll\" -Recurse"
+        ]
     },
     "checkver": {
         "url": "https://github.com/tablacus/TablacusExplorerWebView2/releases/latest",
