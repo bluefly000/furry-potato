@@ -9,20 +9,28 @@
     "extract_dir": "tewv",
     "installer": {
         "script": [
+            "$ErrorActionPreference = \"silentlycontinue\"",
             "$pro = Get-Process \"TE\"",
             "if ( $pro -ne $null ) {",
-            "    Stop-process -name \"TE\"",
+            "    Stop-process -name \"TE\" -Force",
             "}",
-            "Copy-Item \"$dir\\lib\\tewv*.dll\" \"$(appdir tablacus-explorer $global)\\current\\lib\" -Recurse"
+            "while ( $pro -eq $null ) {",
+            "    $pro = Get-Process \"TE\"",
+            "}",
+            "Copy-Item \"$dir\\lib\\tewv*.dll\" \"$(appdir tablacus-explorer $global)\\current\\lib\" -Recurse -Force"
         ]
     },
     "uninstaller": {
         "script": [
-            "$pro = Get-Process \"TE\"",
+            "$ErrorActionPreference = \"silentlycontinue\"",
+            "$pro = Get-Process \"TE\";",
             "if ( $pro -ne $null ) {",
-            "    Stop-process -name \"TE\"",
+            "    Stop-process -name \"TE\" -Force",
             "}",
-            "Remove-Item \"$(appdir tablacus-explorer $global)\\current\\lib\\tewv*.dll\" -Recurse"
+            "while ( $pro -ne $null ) {",
+            "    $pro = Get-Process \"TE\"",
+            "}",
+            "Remove-Item \"$(appdir tablacus-explorer $global)\\current\\lib\\tewv*.dll\" -Recurse -Force"
         ]
     },
     "checkver": {
