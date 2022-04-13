@@ -1,0 +1,23 @@
+{
+    "version": "22.3.15",
+    "description": "Tablacus ExplorerをBlink化する拡張機能",
+    "homepage": "https://tablacus.github.io/tewv2_ja.html",
+    "license": "MIT",
+    "url": "https://github.com/tablacus/TablacusExplorerWebView2/releases/download/22.3.15/tewv2_220315.zip",
+    "hash": "5a7953e44b5a1dccb88d2be0b842b764115b7a485f08d4ea0571f901c6fa5f7f",
+    "depends": "furry-potato/tablacus-explorer",
+    "extract_dir": "tewv",
+    "installer": {
+        "script": "Copy-Item \"$dir\\lib\\tewv*.dll\" \"$(appdir tablacus-explorer $global)\\current\\lib\" -Recurse"
+    },
+    "uninstaller": {
+        "script": "Remove-Item \"$(appdir tablacus-explorer $global)\\current\\lib\\tewv*.dll\" -Recurse"
+    },
+    "checkver": {
+        "url": "https://github.com/tablacus/TablacusExplorerWebView2/releases/latest",
+        "regex": "/releases/download/([\\d.]+)/tewv2_(?<cleanpadding>[\\d]+).zip"
+    },
+    "autoupdate": {
+        "url": "https://github.com/tablacus/TablacusExplorerWebView2/releases/download/$version/tewv2_$matchCleanpadding.zip"
+    }
+}
