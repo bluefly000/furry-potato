@@ -7,24 +7,35 @@
     "hash": "5a7953e44b5a1dccb88d2be0b842b764115b7a485f08d4ea0571f901c6fa5f7f",
     "depends": "furry-potato/tablacus-explorer",
     "extract_dir": "tewv",
+    "pre_install": [
+        "$ErrorActionPreference = \"silentlycontinue\"",
+        "$pro = Get-Process \"TE\"",
+        "if ( $pro -ne $null ) {",
+        "    Write-Output \"Stopping Tablacus Explorer...\"",
+        "    Stop-process -name \"TE\" -Force",
+        "}",
+        "while ( $pro -ne $null ) {",
+        "    $pro = Get-Process \"TE\"",
+        "}"
+    ],
     "installer": {
         "script": [
-            "$ErrorActionPreference = \"silentlycontinue\"",
-            "$pro = Get-Process \"TE\"",
-            "if ( $pro -ne $null ) {",
-            "    Stop-process -name \"TE\" -Force",
-            "}",
-            "while ( $pro -ne $null ) {",
-            "    $pro = Get-Process \"TE\"",
-            "}",
             "Copy-Item \"$dir\\lib\\tewv*.dll\" \"$(appdir tablacus-explorer $global)\\current\\lib\" -Recurse -Force"
         ]
     },
+    "post_install": [
+        "Write-Output \"Starting Tablacus Explorer...\"",
+        "Start-Process -FilePath \"$(appdir tablacus-explorer $global)\\current\\TE.exe\"",
+        "while ( $pro -eq $null ) {",
+        "    $pro = Get-Process \"TE\"",
+        "}"
+    ],
     "uninstaller": {
         "script": [
             "$ErrorActionPreference = \"silentlycontinue\"",
             "$pro = Get-Process \"TE\";",
             "if ( $pro -ne $null ) {",
+            "    Write-Output \"Stopping Tablacus Explorer...\"",
             "    Stop-process -name \"TE\" -Force",
             "}",
             "while ( $pro -ne $null ) {",
