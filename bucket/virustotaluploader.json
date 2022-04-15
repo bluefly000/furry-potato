@@ -1,0 +1,34 @@
+{
+    "version": "0.1.9",
+    "description": "C# Open-Source Winforms application for uploading files to VirusTotal",
+    "homepage": "https://github.com/SamuelTulach/VirusTotalUploader",
+    "license": "GPL-3.0",
+    "url": "https://github.com/SamuelTulach/VirusTotalUploader/releases/download/0.1.9/portable_anycpu_signed.zip",
+    "hash": "913f57c93d81d592ebec2af7dbe2372d871033d34960013244386a12cbd56d72",
+    "extract_dir": "rel",
+    "pre_install": [
+        "if(!(Test-Path(\"$dir\\vtu_settings.json\"))) {",
+        "    Set-Content \"$dir\\vtu_settings.json\" \"{`\"ApiKey`\":`\"`\",`\"Language`\":`\"`\",`\"DirectUpload`\":false}\" -NoNewline | Out-Null",
+        "}"
+    ],
+    "bin": [
+        [
+            "uploader.exe",
+            "virustotal"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "uploader.exe",
+            "VirusTotal Uploader"
+        ]
+    ],
+    "persist": "vtu_settings.json",
+    "checkver": {
+        "url": "https://github.com/SamuelTulach/VirusTotalUploader/releases/latest",
+        "regex": "/releases/download/([\\d.]+)/"
+    },
+    "autoupdate": {
+        "url": "https://github.com/SamuelTulach/VirusTotalUploader/releases/download/$version/portable_anycpu_signed.zip"
+    }
+}
