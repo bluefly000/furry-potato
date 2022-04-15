@@ -1,5 +1,6 @@
 {
     "version": "3.3.7.0",
+    "description": "フォルダ内のファイル占有率を表示",
     "homepage": "https://forest.watch.impress.co.jp/library/software/diskinfo/",
     "license": "Freeware",
     "architecture": {
