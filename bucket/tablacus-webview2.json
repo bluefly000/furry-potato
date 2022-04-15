@@ -6,7 +6,7 @@
     "url": "https://github.com/tablacus/TablacusExplorerWebView2/releases/download/22.4.14/tewv2_220414.zip",
     "hash": "d35848ca9f219c681336c76505397f12754020252473eb94f6279471f7b0a812",
     "depends": "furry-potato/tablacus-explorer",
-    "extract_dir": "tewv",
+    "extract_dir": "lib",
     "pre_install": [
         "$ErrorActionPreference = \"silentlycontinue\"",
         "$pro = Get-Process \"TE\"",
@@ -19,7 +19,7 @@
         "}"
     ],
     "installer": {
-        "script": "Copy-Item \"$dir\\lib\\tewv*.dll\" \"$(appdir tablacus-explorer $global)\\current\\lib\" -Recurse -Force"
+        "script": "Copy-Item \"$dir\\tewv*.dll\" \"$(appdir tablacus-explorer $global)\\current\\lib\" -Recurse -Force"
     },
     "post_install": [
         "Write-Output \"Starting Tablacus Explorer...\"",
