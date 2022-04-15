@@ -1,7 +1,7 @@
 {
     "version": "22.3.15",
-    "homepage": "https://tablacus.github.io/tewv2_ja.html",
-    "description": "Tablacus Explorer Blink extension",
+    "homepage": "https://tablacus.github.io/tewv2.html",
+    "description": "Tablacus Explorer Blink extension.",
     "license": "MIT",
     "url": "https://github.com/tablacus/TablacusExplorerWebView2/releases/download/22.3.15/tewv2_220315.zip",
     "hash": "5a7953e44b5a1dccb88d2be0b842b764115b7a485f08d4ea0571f901c6fa5f7f",
