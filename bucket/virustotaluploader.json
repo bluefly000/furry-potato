@@ -9,7 +9,7 @@
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\vtu_settings.json\")) {",
         "    Add-Content \"$dir\\vtu_settings.json\"  '{\"ApiKey\":\"\",\"Language\":\"\",\"DirectUpload\":false}'",
-        "}",
+        "}"
     ],
     "bin": [
         [
