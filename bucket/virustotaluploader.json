@@ -6,6 +6,11 @@
     "url": "https://github.com/SamuelTulach/VirusTotalUploader/releases/download/0.1.9/portable_anycpu_signed.zip",
     "hash": "913f57c93d81d592ebec2af7dbe2372d871033d34960013244386a12cbd56d72",
     "extract_dir": "rel",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\vtu_settings.json\")) {",
+        "    Add-Content \"$dir\\vtu_settings.json\"  '{\"ApiKey\":\"\",\"Language\":\"\",\"DirectUpload\":false}'",
+        "}",
+    ],
     "bin": [
         [
             "uploader.exe",
@@ -18,6 +23,10 @@
             "VirusTotal Uploader"
         ]
     ],
+    "persist": "vtu_settings.json",
+    "uninstaller": {
+        "script": "Copy-Item \"$dir\\vtu_settings.json\" \"$persist_dir\" -Recurse"
+    },
     "checkver": {
         "url": "https://github.com/SamuelTulach/VirusTotalUploader/releases/latest",
         "regex": "/releases/download/([\\d.]+)/"
