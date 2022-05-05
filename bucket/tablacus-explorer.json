@@ -31,6 +31,19 @@
         "config",
         "icons"
     ],
+	"uninstaller": {
+        "script": [
+            "$ErrorActionPreference = \"silentlycontinue\"",
+            "$pro = Get-Process \"TE\";",
+            "if ( $pro -ne $null ) {",
+            "    Write-Output \"Stopping Tablacus Explorer...\"",
+            "    Stop-process -name \"TE\" -Force",
+            "}",
+            "while ( $pro -ne $null ) {",
+            "    $pro = Get-Process \"TE\"",
+            "}"
+        ]
+    },
     "checkver": {
         "url": "https://github.com/tablacus/TablacusExplorer/releases/latest",
         "regex": "/releases/download/([\\d.]+)/te(?<cleanpadding>[\\d]+).zip"
