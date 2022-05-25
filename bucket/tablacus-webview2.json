@@ -12,7 +12,7 @@
         "$pro = Get-Process \"TE\"",
         "if ( $pro -ne $null ) {",
         "    Write-Output \"Stopping Tablacus Explorer...\"",
-        "    Stop-process -name \"TE\" -Force",
+        "    Stop-Process -name \"TE\" -Force",
         "}",
         "while ( $pro -ne $null ) {",
         "    $pro = Get-Process \"TE\"",
