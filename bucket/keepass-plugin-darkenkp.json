@@ -1,0 +1,19 @@
+{
+    "version": "0.1.4",
+    "description": "DarkenKP - a KeeTheme style for KeePass",
+    "homepage": "https://github.com/BradyThe/DarkenKP",
+    "license": "MIT",
+    "url": "https://github.com/xatupal/KeeTheme/releases/download/v0.9.11/KeeTheme.plgx",
+    "hash": "96e31324241b2eb0a47a4ea3560f69214a425654df5a0ecde7e3d022c6538242",
+    "depends": "extras/keepass",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/BradyThe/DarkenKP/releasesdownload/v$version/KeeTheme.ini"
+    },
+    "installer": {
+        "script": "Copy-Item \"$dir\\KeeTheme.ini\" \"$(appdir keepass $global)\\current\\Plugins\" -Recurse"
+    },
+    "uninstaller": {
+        "script": "Remove-Item \"$(appdir keepass $global)\\current\\Plugins\\KeeTheme.ini\" -Recurse"
+    }
+}
