@@ -1,10 +1,10 @@
 {
-    "version": "22.5.18",
+    "version": "22.6.19",
     "homepage": "https://tablacus.github.io/tewv2.html",
     "description": "Tablacus Explorer Blink extension.",
     "license": "MIT",
-    "url": "https://github.com/tablacus/TablacusExplorerWebView2/releases/download/22.5.18/tewv2_220518.zip",
-    "hash": "8bc9c02c56c02d8a000dcc28601c09e0b4ba13ac61e5366b1c13c724fd77c412",
+    "url": "https://github.com/tablacus/TablacusExplorerWebView2/releases/download/22.6.19/tewv2_220619.zip",
+    "hash": "e01358adbe92e68ded5813303757ff35ecb34f25dfbcdaf530c9612f047a3aab",
     "depends": "furry-potato/tablacus-explorer",
     "extract_dir": "lib",
     "pre_install": [
