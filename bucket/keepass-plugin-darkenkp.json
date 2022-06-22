@@ -5,7 +5,7 @@
     "license": "MIT",
     "url": "https://github.com/BradyThe/DarkenKP/releases/download/v0.1.5/KeeTheme.ini",
     "hash": "3ff29562a0e3b68871f33d214585ba245cef5b8822f47cd21ff8427c89453937",
-    "depends": "extras/keepass",
+    "depends": "furry-potato/keepass-plugin-keetheme",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/BradyThe/DarkenKP/releases/download/v$version/KeeTheme.ini"
