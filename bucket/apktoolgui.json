@@ -1,7 +1,7 @@
 {
     "Version": "3.0.1.0",
     "homepage": "https://github.com/AndnixSH/APKToolGUI",
-    "description": "https://github.com/AndnixSH/APKToolGUI",
+    "description": "GUI for apktool, signapk, zipalign and baksmali utilities.",
     "license": "Freeware",
     "url": "https://github.com/AndnixSH/APKToolGUI/releases/download/v3.0.1.0/APK.Tool.GUI.v3.0.1.0.zip",
     "hash": "aaa",
