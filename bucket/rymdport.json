@@ -9,6 +9,12 @@
             "hash": "c520666229a7a175a32bee362ee711bf5cb5fbd2e9014df1862df1cd2939f3b9"
         }
     },
+    "bin": [
+        [
+            "rymdport.exe",
+            "rymdport"
+        ]
+    ],
     "shortcuts": [
         [
             "rymdport.exe",
