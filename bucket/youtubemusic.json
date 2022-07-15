@@ -4,7 +4,7 @@
     "homepage": "https://github.com/harmonoid/harmonoid",
     "license": "GPL-3.0-only",
     "url": "https://github.com/harmonoid/harmonoid/releases/download/v0.2.4/harmonoid-windows-exe.zip",
-    "hash": "e91636a357f0be1f9579f529c4b888a5ccf905be7889a03"
+    "hash": "aaa"
     "extract_dir": "harmonoid-windows-exe",
     "shortcuts": [
         [
