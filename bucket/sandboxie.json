@@ -1,16 +1,16 @@
 {
-    "version": "1.2.8",
+    "version": "1.2.9",
     "description": "Sandboxie Plus. Sandboxie is a sandbox-based isolation software for 32- and 64-bit Windows NT-based operating systems.",
     "homepage": "https://github.com/sandboxie-plus/Sandboxie",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.2.8/Sandboxie-Plus-x64-v1.2.8.exe#/setup.exe",
-            "hash": "d0cfe4db734d5e9c4722e508939362ec3f839c54204d6ff3d66ea0e4d0193469"
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.2.9/Sandboxie-Plus-x64-v1.2.8b.exe#/setup.exe",
+            "hash": "5b5cb4be682e464799a8100bce46cf36969764918e7ef437c40b1f9222d667e3"
         },
         "32bit": {
-            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.2.8/Sandboxie-Plus-x86-v1.2.8.exe#/setup.exe",
-            "hash": "84e32b20a31188d5ed803e7d712f077991a3e18b63f0f1c6b990fb0ff0c61f15"
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.2.9/Sandboxie-Plus-x86-v1.2.8b.exe#/setup.exe",
+            "hash": "ec8835312c6995063dcf7a92ebcb11a41d86a2bcffd2f6d36d55ee89ef64df6a"
         }
     },
     "installer": {
@@ -32,15 +32,15 @@
     ],
     "checkver": {
         "url": "https://github.com/sandboxie-plus/Sandboxie/releases/latest",
-        "regex": "/download/v([\\d\\w.]+?)/Sandboxie-Plus-x64-v(?<versionNumber>[\\d\\w.]+?).exe"
+        "regex": "/download/v([\\d\\w.]+?)/Sandboxie-Plus-x64-v(?<versionnumber>[\\d\\w.]+?).exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v$version/Sandboxie-Plus-x64-v$matchVersionNumber.exe#/setup.exe"
+                "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v$version/Sandboxie-Plus-x64-v$matchVersionnumber.exe#/setup.exe"
             },
             "32bit": {
-                "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v$version/Sandboxie-Plus-x86-v$matchVersionNumber.exe#/setup.exe"
+                "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v$version/Sandboxie-Plus-x86-v$matchVersionnumber.exe#/setup.exe"
             }
         }
     }
