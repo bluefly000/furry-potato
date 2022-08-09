@@ -31,8 +31,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/sandboxie-plus/Sandboxie",
-        "regex": "/download/v([\\d\\w.]+?)/Sandboxie-Plus-x64-v(?<versionNumber>[\\d\\w.]+?).exe"
+        "url": "https://github.com/sandboxie-plus/Sandboxie/releases/latest",
+        "regex": "/released/download/v([\\d\\w.]+?)/Sandboxie-Plus-x64-v(?<versionNumber>[\\d\\w.]+?).exe"
     },
     "autoupdate": {
         "architecture": {
