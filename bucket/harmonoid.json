@@ -1,7 +1,7 @@
 {
     "version": "0.2.7",
     "homepage": "https://github.com/harmonoid/harmonoid",
-    "description": "Elegant music app to play & manage music library. Time-synced lyrics, playlists & visuals. YouTube Music.",
+    "description": "Plays & manages your music library. Looks beautiful & juicy. Playlists, visuals, synced lyrics, pitch shift & more.",
     "license": "GPL-3.0-only",
     "url": "https://github.com/alexmercerind2/harmonoid-releases/releases/download/v0.2.7/harmonoid-windows-exe.zip",
     "hash": "66721aed52ea1c1ce0c78bd84cf281cbad3a65664db31550b5793aa8f3f02836",
