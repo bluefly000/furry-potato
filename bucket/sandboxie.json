@@ -32,15 +32,15 @@
     ],
     "checkver": {
         "url": "https://github.com/sandboxie-plus/Sandboxie/releases/latest",
-        "regex": "/download/v([\\d\\w.]+?)/Sandboxie-Plus-x64-v(?<versionnumber>[\\d\\w.]+?).exe"
+        "regex": "/download/v([\\d\\w.]+?)/Sandboxie-Plus-x64-v(?<versioncode>[\\d\\w.]+?).exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v$version/Sandboxie-Plus-x64-v$matchVersionnumber.exe#/setup.exe"
+                "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v$version/Sandboxie-Plus-x64-v$matchVersioncode.exe#/setup.exe"
             },
             "32bit": {
-                "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v$version/Sandboxie-Plus-x86-v$matchVersionnumber.exe#/setup.exe"
+                "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v$version/Sandboxie-Plus-x86-v$matchVersioncode.exe#/setup.exe"
             }
         }
     }
