@@ -1,0 +1,22 @@
+{
+    "version": "040",
+    "homepage": "https://dev.yarukizero.net",
+    "description": "某掲示板ブラウザです。",
+    "licence": "Apache License 2.0",
+    "url": "https://dev.yarukizero.net/futamaki/futamaki-040.zip",
+    "hash": "68b2839fc6ca660c43a6f2b71590b9126320a373b0033f8a3e136235286451f3",
+    "extract_dir": "FutaMaki",
+    "shortcuts": [
+        [
+            "futamaki.exe",
+            "FutaMaki"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/azumyar/futaba-makimoki/tags",
+        "regex": "/releases/tag/period-([\\d]+)"
+    },
+    "autoupdate": {
+        "url": "https://dev.yarukizero.net/futamaki/futamaki-$version.zip"
+    }
+}
