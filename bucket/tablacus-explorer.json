@@ -22,6 +22,17 @@
             ]
         }
     },
+    "pre_uninstall": [
+        "$ErrorActionPreference = \"silentlycontinue\"",
+        "$pro = Get-Process \"TE\"",
+        "if ( $pro -ne $null ) {",
+        "    Write-Output \"Stopping Tablacus Explorer...\"",
+        "    Stop-Process -name \"TE\" -Force",
+        "}",
+        "while ( $pro -ne $null ) {",
+        "    $pro = Get-Process \"TE\"",
+        "}"
+    ],
     "bin": "TE.exe",
     "shortcuts": [
         [
