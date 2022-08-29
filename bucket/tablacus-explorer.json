@@ -19,9 +19,6 @@
             ]
         }
     },
-    "post_install": [
-        "scoop install tablacus-webview2"
-    ],
     "bin": "TE.exe",
     "shortcuts": [
         [
