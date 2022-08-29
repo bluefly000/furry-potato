@@ -5,6 +5,9 @@
     "license": "MIT",
     "url": "https://github.com/tablacus/TablacusExplorer/releases/download/22.6.27/te220627.zip",
     "hash": "0bd82451048bf63cfa52e05dfe4e3caa07d7cfc602324dfd4b7f956a26a179cc",
+    "suggest": {
+        "Webview2": "furry-potato/tablacus-webview2"
+    },
     "architecture": {
         "64bit": {
             "pre_install": [
