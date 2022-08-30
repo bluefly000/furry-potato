@@ -9,7 +9,7 @@
     "extract_dir": "keepass-ja-fullwidth-2.50",
     "post_install": {
         "scoop alias add convert.py \"cd $Home\""
-    }
+    },
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/hrko/keepass-ja-fullwidth/archive/refs/tags/v$version.zip",
