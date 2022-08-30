@@ -8,7 +8,7 @@
     "depends": "main/python",
     "extract_dir": "keepass-ja-fullwidth-2.50",
     "post_install": [
-        "scoop alias add convert.py \"cd \\"$(appdir keepass $global)\"\""
+        "scoop alias add convert.py \"cd $(appdir keepass $global)\\current\\Plugins\""
     ],
     "post_uninstall":[
         "scoop alias rm convert.py"
