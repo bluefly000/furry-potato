@@ -8,7 +8,7 @@
     "depends": "main/python",
     "extract_dir": "keepass-ja-fullwidth-2.50",
     "post_install": [
-        "scoop alias add convert.py \"cd $(appdir keepass $global)\\current\\Languages; python $(appdir keepass-ja-fullwidth $global)\\current\\convert.py $Args[0]"
+        "scoop alias add convert.py \"cd $(appdir keepass $global)\\current\\Languages; python $(appdir keepass-ja-fullwidth $global)\\current\\convert.py $Args[0]\""
     ],
     "post_uninstall":[
         "scoop alias rm convert.py"
