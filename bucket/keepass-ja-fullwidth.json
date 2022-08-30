@@ -10,6 +10,9 @@
     "post_install": [
         "scoop alias add convert.py \"cd $Home\""
     ],
+    "post_uninstall":[
+        "scoop alias rm convert.py"
+    ],
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/hrko/keepass-ja-fullwidth/archive/refs/tags/v$version.zip",
