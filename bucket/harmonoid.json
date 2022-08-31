@@ -1,10 +1,10 @@
 {
-    "version": "0.2.6",
+    "version": "0.2.9",
     "homepage": "https://github.com/harmonoid/harmonoid",
     "description": "Plays & manages your music library. Looks beautiful & juicy. Playlists, visuals, synced lyrics, pitch shift & more.",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/alexmercerind2/harmonoid-releases/releases/download/v0.2.6/harmonoid-windows-exe.zip",
-    "hash": "110dc0f1d81410976f97aab19220c776ae71d856c637ed6694221b0958115774",
+    "url": "https://github.com/alexmercerind2/harmonoid-releases/releases/download/v0.2.9/harmonoid-windows-exe.zip",
+    "hash": "41613f625ce422b05d90b630aec60ea7ee34e0953f1777b9f5c2dd9fb30f734e",
     "extract_dir": "harmonoid-windows-exe",
     "shortcuts": [
         [
