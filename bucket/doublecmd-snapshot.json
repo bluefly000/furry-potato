@@ -1,16 +1,16 @@
 {
-    "version": "1.0.6",
+    "version": "1.1.0",
     "description": "Two pane file manager inspired by Total Commander",
     "homepage": "https://doublecmd.sourceforge.io/",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/doublecmd/DC%20for%20Windows%2064%20bit/Double%20Commander%201.0.6%20beta/doublecmd-1.0.6.x86_64-win64.msi",
-            "hash": "sha1:09d577c60767316d1c39c4276ecb073c19e9b857"
+            "url": "https://doublecmd.sourceforge.io/snapshots/doublecmd-1.1.0.r10338.x86_64-win64.7z",
+            "hash": "f6a45a13d39b57d2e75cdede8a61f453d6f2f6ebe27ea184c7ab754cb00ef462"
         },
         "32bit": {
-            "url": "https://downloads.sourceforge.net/project/doublecmd/DC%20for%20Windows%2032%20bit/Double%20Commander%201.0.6%20beta/doublecmd-1.0.6.i386-win32.msi",
-            "hash": "sha1:93b1a2cda56f250e62ee3f66437e779fa07ba891"
+            "url": "https://doublecmd.sourceforge.io/snapshots/doublecmd-1.1.0.r10338.i386-win32.7z",
+            "hash": "ecd94d9106e3244d7a2b9abf8fac0bbb4eaf9686e63119cd4e25157d193dba35"
         }
     },
     "bin": "doublecmd.exe",
@@ -27,10 +27,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://doublecmd.sourceforge.io/snapshots/doublecmd-$Version.r$Revision.x86_64-win64.7z"
+                "url": "https://doublecmd.sourceforge.io/snapshots/doublecmd-$version.r$matchRevision.x86_64-win64.7z"
             },
             "32bit": {
-                "url": "https://doublecmd.sourceforge.io/snapshots/doublecmd-$Version.r$Revision.i386-win32.7z"
+                "url": "https://doublecmd.sourceforge.io/snapshots/doublecmd-$version.r$matchRevision.i386-win32.7z"
             }
         }
     }
