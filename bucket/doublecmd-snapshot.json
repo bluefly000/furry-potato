@@ -17,7 +17,7 @@
     "shortcuts": [
         [
             "doublecmd.exe",
-            "Double Commander",
+            "Double Commander Snapshot",
             "--no-splash"
         ]
     ],
