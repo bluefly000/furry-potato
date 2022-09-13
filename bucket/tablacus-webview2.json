@@ -43,8 +43,7 @@
         ]
     },
     "checkver": {
-        "url": "https://github.com/tablacus/TablacusExplorerWebView2/releases",
-        "regex": "/releases/download/([\\d.]+)/tewv2_(?<cleanpadding>[\\d]+).zip"
+        "regex": "Version <span id=\"ver\">([\\d.]+)</span>[\\w\\W]*?tewv2_(?<cleanpadding>\\d+)\\.zip"
     },
     "autoupdate": {
         "url": "https://github.com/tablacus/TablacusExplorerWebView2/releases/download/$version/tewv2_$matchCleanpadding.zip"
