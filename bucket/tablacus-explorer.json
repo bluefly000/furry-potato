@@ -35,8 +35,7 @@
         "icons"
     ],
     "checkver": {
-        "url": "https://github.com/tablacus/TablacusExplorer/releases/latest",
-        "regex": "/releases/download/([\\d.]+)/te(?<cleanpadding>[\\d]+).zip"
+        "regex": "Version <span id=\"ver\">([\\d.]+)</span>[\\w\\W]*?te(?<cleanpadding>\\d+)\\.zip"
     },
     "autoupdate": {
         "url": "https://github.com/tablacus/TablacusExplorer/releases/download/$version/te$matchCleanpadding.zip"
