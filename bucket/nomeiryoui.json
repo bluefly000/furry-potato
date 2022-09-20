@@ -13,10 +13,10 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/Tatsu-syo/noMeiryoUI/releases/latest",
-        "regex": "/releases/download/TAG-([\\d.]+)/noMeiryoUI(?<fileversion>[\\d\\w.]+).zip"
+        "url": "https://github.com/Tatsu-syo/noMeiryoUI/",
+        "regex": "/TAG-([\\d.]+)/"
     },
     "autoupdate": {
-        "url": "https://github.com/Tatsu-syo/noMeiryoUI/releases/download/TAG-$version/noMeiryoUI$matchFileversion.zip"
+        "url": "https://github.com/Tatsu-syo/noMeiryoUI/releases/download/TAG-$version/noMeiryoUI$version.zip"
     }
 }
