@@ -28,8 +28,8 @@
         "script": "Copy-Item \"$dir\\vtu_settings.json\" \"$persist_dir\" -Recurse"
     },
     "checkver": {
-        "url": "https://github.com/SamuelTulach/VirusTotalUploader/releases/latest",
-        "regex": "/releases/download/([\\d.]+)/"
+        "url": "https://github.com/SamuelTulach/VirusTotalUploader/releases.atom",
+        "regex": "/releases/tag/([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/SamuelTulach/VirusTotalUploader/releases/download/$version/portable_anycpu_signed.zip"
