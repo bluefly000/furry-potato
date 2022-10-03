@@ -12,7 +12,7 @@
             "Photon"
         ]
     ],
-    "extract_dir": "PlemolJP_HS_v1.2.7",
+    "extract_dir": "photon-windows-exe",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/abhi16180/photon/releases/download/v$version/photon-windows-v$version.zip"
