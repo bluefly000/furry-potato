@@ -1,5 +1,5 @@
 {
-    "version": "0.10.1",
+    "version": "0.10.2",
     "description": "Desktop client for Matrix using Qt and C++17.",
     "homepage": "https://nheko-reborn.github.io/",
     "license": "GPL-3.0-or-later",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Nheko-Reborn/nheko/releases/download/v0.10.1/nheko-win64-without-installer-v0.10.1.zip",
-            "hash": "1ea21656e416e6a838493337338e2eade3a5f62ef1063633425866e0cf1eec08"
+            "url": "https://github.com/Nheko-Reborn/nheko/releases/download/v0.10.2/nheko-v0.10.2-no-installer-win64.zip",
+            "hash": "d057173b144c23de463bee632d1f95184e306f1a1887a1e975e827c31376abe1"
         }
     },
     "shortcuts": [
@@ -24,7 +24,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Nheko-Reborn/nheko/releases/download/v$version/nheko-win64-no-installer-v$version.zip"
+                "url": "https://github.com/Nheko-Reborn/nheko/releases/download/v$version/nheko-v$version-no-installer-win64.zip"
             }
         }
     }
