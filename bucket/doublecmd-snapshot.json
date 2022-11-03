@@ -23,15 +23,15 @@
     ],
     "checkver": {
         "url": "https://doublecmd.sourceforge.io/site/eng/snapshots.php",
-        "regex": "doublecmd-(?<majorrelease>[\\d.]+)\\.r(?<version>[\\d.]+)\\.i386-win32\\.7z"
+        "regex": "doublecmd-([\\d.\\a-z]+)\\.i386-win32\\.7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://doublecmd.sourceforge.io/snapshots/doublecmd-$matchMajorrelease.r$version.x86_64-win64.7z"
+                "url": "https://doublecmd.sourceforge.io/snapshots/doublecmd-$version.x86_64-win64.7z"
             },
             "32bit": {
-                "url": "https://doublecmd.sourceforge.io/snapshots/doublecmd-$matchMajorrelease.r$version.i386-win32.7z"
+                "url": "https://doublecmd.sourceforge.io/snapshots/doublecmd-$version.i386-win32.7z"
             }
         }
     }
