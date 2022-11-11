@@ -1,10 +1,10 @@
 {
-    "version": "041",
+    "version": "042",
     "homepage": "https://dev.yarukizero.net",
     "description": "某掲示板ブラウザです。",
     "licence": "Apache License 2.0",
-    "url": "https://dev.yarukizero.net/futamaki/futamaki-041.zip",
-    "hash": "7f77896646fb0d4618433929ff9b735d915254ec21e129c5ce5d6c8439f87ffb",
+    "url": "https://dev.yarukizero.net/futamaki/futamaki-042.zip",
+    "hash": "93ffe7d3b0a61423e8838a7138fc2b4570818c7395b99845939309a8039ea923",
     "extract_dir": "FutaMaki",
     "shortcuts": [
         [
