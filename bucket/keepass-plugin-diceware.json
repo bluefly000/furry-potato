@@ -1,10 +1,10 @@
 {
-    "version": "1.4.0",
+    "version": "1.4.1",
     "description": "A KeePass 2.0 plugin that provides 'Diceware' style passphrases.",
     "homepage": "https://github.com/cmdwtf/KeePassDiceware",
     "license": "MIT",
-    "url": "https://github.com/cmdwtf/KeePassDiceware/releases/download/v1.4.0/KeePassDiceware.dll",
-    "hash": "e5f704bb630dd25dda3be665ca8b9b1e951e0d050812ab933ee96c0c954e40a8",
+    "url": "https://github.com/cmdwtf/KeePassDiceware/releases/download/v1.4.1/KeePassDiceware.dll",
+    "hash": "97b569e8ea6a6e1608321aee73b91836af439a2521aa7999455f4b018b9d5f5c",
     "depends": "extras/keepass",
     "checkver": "github",
     "autoupdate": {
