@@ -1,14 +1,14 @@
 {
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "BIZ UDゴシックとJetBrains Monoを合成したプログラミング向けフォント UDEV Gothic",
     "homepage": "https://github.com/yuru7/udev-gothic",
     "license": {
         "identifier": "Freeware",
         "url": "https://github.com/yuru7/udev-gothic/blob/main/LICENSE.txt"
     },
-    "url": "https://github.com/yuru7/udev-gothic/releases/download/v1.0.1/UDEVGothic_v1.0.1.zip",
-    "hash": "511fcafeb97dec7f464653d7026b80b987c20311d9a8247c03ba946db9dca45e",
-    "extract_dir": "UDEVGothic_v1.0.1",
+    "url": "https://github.com/yuru7/udev-gothic/releases/download/v1.1.0/UDEVGothic_v1.1.0.zip",
+    "hash": "959f4a687ce960ba8f67ce323843c119373a923c1b6216c944bf34c8a641536e",
+    "extract_dir": "UDEVGothic_v1.1.0",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/yuru7/udev-gothic/releases/download/v$version/UDEVGothic_v$version.zip",
