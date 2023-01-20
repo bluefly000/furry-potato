@@ -1,10 +1,10 @@
 {
-    "version": "1.1.0",
+    "version": "1.2.0",
     "homepage": "https://github.com/abhi16180/photon",
     "description": "Photon is a cross-platform file-sharing application built using flutter.",
     "license": "GNU General Public License v3.0",
-    "url": "https://github.com/abhi16180/photon/releases/download/v1.1.0/photon-windows-v1.1.0.zip",
-    "hash": "895a9ddf92f14f55416074eaa3b80e9911862da93021e9b283af630ee77da12a",
+    "url": "https://github.com/abhi16180/photon/releases/download/v1.2.0/photon-windows-v1.2.0.zip",
+    "hash": "2c77347f9c38f8aae0774d7b04d0681c4b9ee59ba76c2506c9d3ece29bb9c01f",
     "bin": "photon.exe",
     "shortcuts": [
         [
