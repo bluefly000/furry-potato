@@ -1,14 +1,14 @@
 {
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "BIZ UDゴシックとJetBrains Monoを合成したプログラミング向けフォント UDEV Gothic に Nerd Fonts を追加合成したバリエーション",
     "homepage": "https://github.com/yuru7/udev-gothic",
     "license": {
         "identifier": "Freeware",
         "url": "https://github.com/yuru7/udev-gothic/blob/main/LICENSE.txt"
     },
-    "url": "https://github.com/yuru7/udev-gothic/releases/download/v1.1.0/UDEVGothic_NF_v1.1.0.zip",
-    "hash": "13763a5d7d0cf2a025740b910820933af745a1734baf730c910fad82ffa85178",
-    "extract_dir": "UDEVGothic_NF_v1.1.0",
+    "url": "https://github.com/yuru7/udev-gothic/releases/download/v1.2.0/UDEVGothic_NF_v1.2.0.zip",
+    "hash": "ce74ce77e993d9ce616a4a5a35c7e5e0e06e75c883e98d2cae8d8191008e10c2",
+    "extract_dir": "UDEVGothic_NF_v1.2.0",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/yuru7/udev-gothic/releases/download/v$version/UDEVGothic_NF_v$version.zip",
