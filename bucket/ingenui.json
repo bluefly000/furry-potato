@@ -1,14 +1,14 @@
 {
-    "version": "0.1.0",
+    "version": "0.2.1",
     "description": "Inter と 源真ゴシック (プロポーショナル版) を合成した UI フォント InGen UI",
     "homepage": "https://github.com/yuru7/InGenUI",
     "license": {
         "identifier": "Freeware",
         "url": "https://github.com/yuru7/InGenUI/blob/master/LICENSE.txt"
     },
-    "url": "https://github.com/yuru7/InGenUI/releases/download/v0.1.0/InGenUI_v0.1.0.zip",
-    "hash": "b5baadb3a2cc8dbe6bb2d5068f09b1102bae16ae0f0c549a6d24027c45d2c751",
-    "extract_dir": "InGenUI_v0.1.0",
+    "url": "https://github.com/yuru7/InGenUI/releases/download/v0.2.1/InGenUI_v0.2.1.zip",
+    "hash": "b82534f02aabce93aef2d5fd53c29028c20821b172f23647c889dbe790c3864b",
+    "extract_dir": "InGenUI_v0.2.1",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/yuru7/InGenUI/releases/download/v$version/InGenUI_v$version.zip",
