@@ -1,14 +1,14 @@
 {
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Fira Mono と源真ゴシックを合成したプログラミングフォント Firge (ファージ) に Nerd Fonts を追加したバリエーション",
     "homepage": "https://github.com/yuru7/Firge/",
     "license": {
         "identifier": "Freeware",
         "url": "https://github.com/yuru7/Firge/blob/master/LICENSE.txt"
     },
-    "url": "https://github.com/yuru7/Firge/releases/download/v0.2.0/FirgeNerd_v0.2.0.zip",
-    "hash": "da3dd6437aeb3b68cf57c868602f1e7135b0eed7a91e4682f28a5efd7716afc9",
-    "extract_dir": "FirgeNerd_v0.2.0",
+    "url": "https://github.com/yuru7/Firge/releases/download/v0.3.0/FirgeNerd_v0.3.0.zip",
+    "hash": "54cd76378fbc5025f42d441d95ca6ec1d3ecc4270e6107558840fed7c04cfe4f",
+    "extract_dir": "FirgeNerd_v0.3.0",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/yuru7/Firge/releases/download/v$version/FirgeNerd_v$version.zip",
