@@ -1,14 +1,14 @@
 {
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Fira Mono と源真ゴシックを合成したプログラミングフォント Firge (ファージ)",
     "homepage": "https://github.com/yuru7/Firge/",
     "license": {
         "identifier": "Freeware",
         "url": "https://github.com/yuru7/Firge/blob/master/LICENSE.txt"
     },
-    "url": "https://github.com/yuru7/Firge/releases/download/v0.2.0/Firge_v0.2.0.zip",
-    "hash": "18ccd0d5c7689a02af4a7217912c0112db9f24071e8b36a716baef3b446c32e7",
-    "extract_dir": "Firge_v0.2.0",
+    "url": "https://github.com/yuru7/Firge/releases/download/v0.3.0/Firge_v0.3.0.zip",
+    "hash": "c986f621000a6598064c7e2078322ed02040af4f7804d258033df949b35b0527",
+    "extract_dir": "Firge_v0.3.0",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/yuru7/Firge/releases/download/v$version/Firge_v$version.zip",
