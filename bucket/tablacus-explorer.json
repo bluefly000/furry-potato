@@ -4,7 +4,7 @@
     "description": "A tabbed file manager with Add-on support",
     "license": "MIT",
     "url": "https://github.com/tablacus/TablacusExplorer/releases/download/23.9.13/te230913.zip",
-    "hash": "e79c274b02a636c3ddaac736b8125ecd9526c12993424d8496063270e7a69a1e",
+    "hash": "b8b231a4f9348a7de542257efcf6d4c5a607fecc7154d14c7ed4576225732127",
     "suggest": {
         "Webview2": "scoop install tablacus-webview2"
     },
