@@ -1,10 +1,10 @@
 {
-    "version": "23.9.13",
+    "version": "24.2.13",
     "homepage": "https://tablacus.github.io/explorer_en.html",
     "description": "A tabbed file manager with Add-on support",
     "license": "MIT",
-    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/23.9.13/te230913.zip",
-    "hash": "b8b231a4f9348a7de542257efcf6d4c5a607fecc7154d14c7ed4576225732127",
+    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/24.2.13/te240213.zip",
+    "hash": "0aa3acacfa72fd6a939ed656bab0022596002536a951169b7bc8e47424e0ec58",
     "suggest": {
         "Webview2": "scoop install tablacus-webview2"
     },
