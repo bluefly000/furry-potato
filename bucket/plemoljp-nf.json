@@ -1,14 +1,14 @@
 {
-    "version": "1.7.0",
+    "version": "1.7.1",
     "description": "IBM Plex Mono と IBM Plex Sans JP を合成したプログラミングフォント PlemolJP (プレモル ジェイピー) に Nerd Fonts を追加したバリエーション",
     "homepage": "https://github.com/yuru7/PlemolJP",
     "license": {
         "identifier": "Freeware",
         "url": "https://github.com/yuru7/PlemolJP/blob/master/LICENSE.txt"
     },
-    "url": "https://github.com/yuru7/PlemolJP/releases/download/v1.7.0/PlemolJP_NF_v1.7.0.zip",
-    "hash": "684ce45c3fe8dc4e489ad0f59216e8e707f0af27a39ba562f34f86d83309b952",
-    "extract_dir": "PlemolJP_NF_v1.7.0",
+    "url": "https://github.com/yuru7/PlemolJP/releases/download/v1.7.1/PlemolJP_NF_v1.7.1.zip",
+    "hash": "c81a4c6121afa5d2af4bf22a04feab5c531d4f4011ae1adc9d4243e77a0cccbb",
+    "extract_dir": "PlemolJP_NF_v1.7.1",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/yuru7/PlemolJP/releases/download/v$version/PlemolJP_NF_v$version.zip",
