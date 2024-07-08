@@ -1,12 +1,12 @@
 {
     "homepage": "https://vivaldi.com/",
     "description": "An innovatively designed web browser, based on Blink, for users in Vivaldi.net community that replaced departed My Opera",
-    "version": "6.9.3390.26",
+    "version": "6.9.3401.4",
     "license": "https://vivaldi.com/privacy/vivaldi-end-user-license-agreement/",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.6.9.3390.26_arm64-v8a.apk",
-            "hash": "4a7762249d3836e5c95d6dc39e144113607f5dd3f5006a400e4be8f1a7a89a14"
+            "url": "https://downloads.vivaldi.com/snapshot/Vivaldi.6.9.3401.4_arm64-v8a.apk",
+            "hash": "caa0cd63dae894c0a295b304318eb46191ff354c00b58fb5faa329cd95e6f92e"
         }
     },
     "checkver": {
