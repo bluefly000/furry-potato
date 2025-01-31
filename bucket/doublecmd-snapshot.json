@@ -1,16 +1,16 @@
 {
-    "version": "1.2.0.r11832",
+    "version": "1.2.0.r11835",
     "description": "Two pane file manager inspired by Total Commander",
     "homepage": "https://doublecmd.sourceforge.io/",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://doublecmd.sourceforge.io/snapshots/doublecmd-1.2.0.r11832.x86_64-win64.7z",
-            "hash": "58e33099599aa4b6f1010bfbb0bac9e12bcf7970da3ca296b9a30c23d2bbb79f"
+            "url": "https://doublecmd.sourceforge.io/snapshots/doublecmd-1.2.0.r11835.x86_64-win64.7z",
+            "hash": "27aa8a58e2147e64606696c48b45bfc3166b2a029550d9a9f8b369d6728e069a"
         },
         "32bit": {
-            "url": "https://doublecmd.sourceforge.io/snapshots/doublecmd-1.2.0.r11832.i386-win32.7z",
-            "hash": "055c66c714b920dd16b2b6e9619cad6c21b8b4b1af12179d277443e24f9616ac"
+            "url": "https://doublecmd.sourceforge.io/snapshots/doublecmd-1.2.0.r11835.i386-win32.7z",
+            "hash": "a9a739beab10946f49d8326c182029d2c20b308ea860bd4ed14dcfc2e6be9611"
         }
     },
     "bin": "doublecmd.exe",
