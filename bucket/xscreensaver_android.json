@@ -1,9 +1,9 @@
 {
-    "version": "6.13",
+    "version": "6.14",
     "license": "custom",
     "homepage": "https://www.jwz.org/xscreensaver/",
-    "url": "https://www.jwz.org/xscreensaver/xscreensaver-6.13.apk",
-    "hash": "e083c7b55d6e7bafe736823d65cba61593dcc70ced6f922c938d33fb0462cc1c",
+    "url": "https://www.jwz.org/xscreensaver/xscreensaver-6.14.apk",
+    "hash": "9e57f3b3918212449d75bd0b8f4005d9691d6784fd9a8270da77c4445ca2cd9c",
     "checkver": {
         "url": "https://www.jwz.org/xscreensaver/download.html",
         "regex": "xscreensaver-([\\d.]+)\\.apk"
